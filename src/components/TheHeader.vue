@@ -1,0 +1,45 @@
+<script
+  setup
+  lang="ts"
+></script>
+
+<template>
+  <header
+    class="header"
+  >
+    <div
+      class="container"
+    >
+      <div>
+        P
+      </div>
+
+      <button>
+        <div
+          i-carbon:search
+          w-1em
+          h-1em
+        ></div>
+      </button>
+      <button>
+        <div
+          i-carbon:shopping-cart
+          w-1em
+          h-1em
+        ></div>
+      </button>
+      <button>
+        Sign
+        Up
+      </button>
+      <button>
+        Sign
+        In
+      </button>
+    </div>
+  </header>
+</template>
+
+<style
+  scoped
+></style>

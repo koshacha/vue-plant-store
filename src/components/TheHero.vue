@@ -1,0 +1,57 @@
+<script
+  setup
+  lang="ts"
+></script>
+
+<template>
+  <section>
+    <div>
+      <div>
+        image
+      </div>
+      <div>
+        <h1>
+          Kembang
+          Flower
+          Mantap
+        </h1>
+        <p>
+          Lorem
+          ipsum
+          dolor
+          sit
+          amet,
+          consectetur
+          adipisicing
+          elit.
+          Eius,
+          magni?
+        </p>
+      </div>
+      <div>
+        <div>
+          &lt;
+          Previous
+        </div>
+        <div>
+          Kaktus
+          Plant
+        </div>
+      </div>
+      <div>
+        <div>
+          Next
+          &gt;
+        </div>
+        <div>
+          Rahasia
+          Plant
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<style
+  scoped
+></style>

@@ -1,5 +1,9 @@
 <template>
-  <main font-sans>
+  <main
+    font-sans
+  >
+    <TheHeader />
     <RouterView />
+    <TheFooter />
   </main>
 </template>
