@@ -1,26 +1,25 @@
 <script lang="ts" setup>
-
+import about1 from '~/assets/about-1.png'
+import about2 from '~/assets/about-2.png'
 </script>
 
 <template>
-  <section>
-    <div>
-      <div>
+  <section m="b-20">
+    <div container>
+      <div grid="~ cols-2 rows-2" gap="21">
         <div>
-          <h2>
+          <h2 text="4xl balance" m="b-4" font="700">
             Buy more plants, it helps you to be relaxed
           </h2>
-          <p>
-            Lorem ipsum dolor sit amet,
-            consectetur adipisicing
-            elit. Eius, magni?
+          <p text-base>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida gravida aliquam. Pellentesque et lobortis nisl. Sed et mauris justo. Nulla eu enim non mauris maximus dignissim. Maecenas vitae eros sapien. Quisque pellentesque tempus dignissim.
           </p>
         </div>
-        <div>
-          bottom image
+        <div row-span-2>
+          <img :src="about2" alt="">
         </div>
         <div>
-          right image
+          <img :src="about1" alt="">
         </div>
       </div>
     </div>
