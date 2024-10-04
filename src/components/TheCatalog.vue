@@ -50,7 +50,9 @@ const items: Product[] = [
   <section m="b-20">
     <div container>
       <div flex items="center" justify="between" p="b-4" m="b-6" border="b #E0E0E0">
-        <h2>Featured Plants</h2>
+        <h2 text="xl" font="500">
+          Featured Plants
+        </h2>
         <div>
           <select>
             <option>Cheaper First</option>

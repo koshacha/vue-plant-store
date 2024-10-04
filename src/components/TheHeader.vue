@@ -17,10 +17,8 @@ const styles = computed(() => {
     class="header"
     :class="styles"
     p="y-2 t-10"
-    absolute
-    top-0
-    w-full
-    transition
+
+    absolute top-0 z-1 w-full transition
   >
     <div
       class="container"
