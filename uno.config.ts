@@ -37,7 +37,7 @@ export default defineConfig({
     }),
     presetWebFonts({
       fonts: {
-        montserrat: 'Montserrat:400,500,700',
+        montserrat: 'Montserrat:400,500,600,700',
         nunito: 'Nunito:700',
       },
     }),

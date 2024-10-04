@@ -1,4 +1,10 @@
 <script lang="ts" setup>
+import plant1 from '~/assets/plant-1.png'
+import plant2 from '~/assets/plant-2.png'
+import plant3 from '~/assets/plant-3.png'
+import plant4 from '~/assets/plant-4.png'
+import plant5 from '~/assets/plant-5.png'
+
 interface Product {
   id: string
   name: string
@@ -9,35 +15,41 @@ interface Product {
 const items: Product[] = [
   {
     id: '1',
-    name: 'Kembang Flower Mantap',
-    image: 'https://source.unsplash.com/random',
+    name: 'Kaktus Plants',
+    image: plant1,
     price: 10000,
   },
   {
     id: '2',
-    name: 'Kembang Flower Mantap',
-    image: 'https://source.unsplash.com/random',
+    name: 'Landak Plants',
+    image: plant2,
     price: 10000,
   },
   {
     id: '3',
-    name: 'Kembang Flower Mantap',
-    image: 'https://source.unsplash.com/random',
+    name: 'Kecubung Plants',
+    image: plant3,
     price: 10000,
   },
   {
     id: '4',
-    name: 'Kembang Flower Mantap',
-    image: 'https://source.unsplash.com/random',
+    name: 'Kecubung Plants',
+    image: plant4,
+    price: 10000,
+  },
+  {
+    id: '5',
+    name: 'Kembang Flower Mantap Kembang',
+    image: plant5,
     price: 10000,
   },
 ]
 </script>
 
 <template>
-  <section>
-    <div>
-      <div>
+  <section m="b-20">
+    <div container>
+      <div flex items="center" justify="between" p="b-4" m="b-6" border="b #E0E0E0">
         <h2>Featured Plants</h2>
         <div>
           <select>
@@ -45,11 +57,17 @@ const items: Product[] = [
           </select>
         </div>
       </div>
-      <div>
-        <div v-for="item in items" :key="item.id">
-          <img :src="item.image" alt="">
-          <div>{{ item.name }}</div>
-          <div>IDR {{ item.price }}</div>
+      <div grid="~ cols-5" gap="5">
+        <div v-for="item in items" :key="item.id" class="group">
+          <div overflow-hidden m="b-4">
+            <img :src="item.image" alt="" aspect-ratio-1 w-full transition transform="origin-top group-hover:scale-120">
+          </div>
+          <div text="center balance" m="b-2">
+            {{ item.name }}
+          </div>
+          <div text="center" font="600">
+            IDR {{ item.price }}
+          </div>
         </div>
       </div>
     </div>
