@@ -2,11 +2,10 @@
 import { defineProps, withDefaults } from 'vue'
 import type { AnchorHTMLAttributes } from 'vue'
 
-interface Props extends /* @vue-ignore */ AnchorHTMLAttributes {
+const props = withDefaults(defineProps<{
   theme?: 'primary' | 'transparent'
-}
-
-const props = withDefaults(defineProps<Props>(), {
+  class?: AnchorHTMLAttributes['class']
+}>(), {
   theme: 'primary',
 })
 
@@ -16,7 +15,7 @@ const stylesProps = props.theme === 'primary'
 </script>
 
 <template>
-  <button font="bold nunito" p="y-2 x-10" :class="stylesProps">
+  <button font="bold nunito" p="y-2 x-10" :class="[stylesProps, props.class]">
     <slot />
   </button>
 </template>

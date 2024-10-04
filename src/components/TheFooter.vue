@@ -1,111 +1,30 @@
 <script
   setup
   lang="ts"
-></script>
+>
+import TheFooterMenu from './TheFooterMenu.vue'
+import TheMailingForm from './TheMailingForm.vue'
+</script>
 
 <template>
-  <footer>
-    <div
-      class=""
-    >
-      <div>
-        <div>
+  <footer text="#333333" font="work" p="t-15 b-17" border="t primary/10">
+    <div class="container/small" flex="~ row" justify="between">
+      <div class="max-w-1/5">
+        <div font="nunito bold" text="primary xl" m="b-6" uppercase>
+          Plants
+        </div>
+        <p font="500" m="b-2.5">
           Vue
           Plant
           Store
-        </div>
-        <p>
-          Lorem.
         </p>
-        <p>
-          Lorem
-          ipsum
-          dolor
-          sit
-          amet,
-          consectetur
-          adipisicing
-          elit.
-          At
-          consectetur
-          neque
-          quidem
-          vel
-          vitae
-          voluptates.
+        <p text="balance #4F4F4F sm0.5">
+          Suite 932 9538 Reynolds Expressway, Pollichchester, OH 98889-3830
         </p>
       </div>
-      <div>
-        <h5>
-          Menu
-          title
-        </h5>
-        <ul>
-          <li>
-            <a
-              href="#"
-              >lorem</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              >lorem</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              >lorem</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h5>
-          Menu
-          title
-        </h5>
-        <ul>
-          <li>
-            <a
-              href="#"
-              >lorem</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              >lorem</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              >lorem</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h5>
-          Mailing
-        </h5>
-        <form
-          action=""
-        >
-          <input
-            type="email"
-            name="mail"
-            id=""
-          />
-          <button
-            type="submit"
-          >
-            Submit</button
-          >/
-        </form>
-      </div>
+      <TheFooterMenu title="Company" :items="[{ title: 'About', href: '/about' }, { title: 'Blog', href: '/blog' }, { title: 'Careers', href: '/careers' }]" />
+      <TheFooterMenu title="Help" :items="[{ title: 'FAQ', href: '/faq' }, { title: 'Shipping', href: '/shipping' }, { title: 'Returns', href: '/returns' }]" />
+      <TheMailingForm />
     </div>
   </footer>
 </template>
