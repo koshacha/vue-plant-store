@@ -9,5 +9,5 @@ defineOptions({
   <TheAdvantages />
   <TheCatalog />
   <TheAbout />
-  <TheKTA />
+  <TheCTA />
 </template>
