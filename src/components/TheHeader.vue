@@ -2,17 +2,25 @@
   setup
   lang="ts"
 >
-import TheLogo from './TheLogo.vue'
+import { useScroll } from '@vueuse/core'
+import { computed } from 'vue'
+
+const { y } = useScroll(window)
+
+const styles = computed(() => {
+  return y.value > 20 ? 'bg-white pt-5 pb-5 shadow-xl fixed' : 'bg-transparent'
+})
 </script>
 
 <template>
   <header
     class="header"
-    p="y-2"
-    m="t-10"
-    fixed
+    :class="styles"
+    p="y-2 t-10"
+    absolute
     top-0
     w-full
+    transition
   >
     <div
       class="container"
