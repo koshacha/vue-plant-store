@@ -3,7 +3,7 @@ import heroImage from '~/assets/hero-bg.png'
 </script>
 
 <template>
-  <section>
+  <section m="b-35">
     <div grid="~ cols-2">
       <div>
         <img :src="heroImage" alt="hero image">

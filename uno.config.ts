@@ -17,7 +17,7 @@ export default defineConfig({
       base: '#2C1500',
     },
     fontSize: {
-      'sm': '0.625rem',
+      'sm': ['0.625rem', '1rem'],
       'sm0.5': '0.875rem',
       'base': '1rem',
       '0.5xl': ['1.125rem', '2rem'],

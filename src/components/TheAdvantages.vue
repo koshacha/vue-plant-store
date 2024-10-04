@@ -1,7 +1,4 @@
-<script
-  setup
-  lang="ts"
->
+<script setup lang="ts">
 const items: {
   title: string
   text: string
@@ -36,27 +33,19 @@ const items: {
 </script>
 
 <template>
-  <section>
-    <div>
-      <div>
-        <div
-          v-for="(
-            item,
-            i
-          ) in items"
-          :key="
-            i
-          "
-        >
-          <div>
-            icon
+  <section m="b-20">
+    <div container>
+      <div grid="~ cols-4" gap="8">
+        <div v-for="(item, i) in items" :key="i" border="~ #E0E0E0" p="x-4 y-5">
+          <div flex="~ row" items="center" m="b-4">
+            <div size-12 :class="item.icon" color="primary" m="r-4" />
+            <h5 text="primary" font="700">
+              {{
+                item.title
+              }}
+            </h5>
           </div>
-          <h5>
-            {{
-              item.title
-            }}
-          </h5>
-          <p>
+          <p text="sm">
             {{
               item.text
             }}
@@ -66,7 +55,3 @@ const items: {
     </div>
   </section>
 </template>
-
-<style
-  scoped
-></style>
