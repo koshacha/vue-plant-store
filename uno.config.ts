@@ -20,11 +20,12 @@ export default defineConfig({
       'sm': '0.625rem',
       'sm0.5': '0.875rem',
       'base': '1rem',
-      '0.5xl': '1.125rem',
+      '0.5xl': ['1.125rem', '2rem'],
       'xl': '1.25rem',
       '2xl': '1.5rem',
       '3xl': '2rem',
       '4xl': '2.5rem',
+      '5xl': ['4.25rem', '5.188rem'],
     },
   },
   presets: [

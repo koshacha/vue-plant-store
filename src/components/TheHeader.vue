@@ -10,6 +10,9 @@ import TheLogo from './TheLogo.vue'
     class="header"
     p="y-2"
     m="t-10"
+    fixed
+    top-0
+    w-full
   >
     <div
       class="container"
