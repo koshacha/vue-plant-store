@@ -7,7 +7,26 @@ import {
 } from 'unocss'
 
 export default defineConfig({
-  shortcuts: [],
+  shortcuts: {
+    'container': 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8',
+    'container/small': 'max-w-5xl mx-auto px-4 sm:px-6 lg:px-8',
+  },
+  theme: {
+    colors: {
+      primary: '#156963',
+      base: '#2C1500',
+    },
+    fontSize: {
+      'sm': '0.625rem',
+      'sm0.5': '0.875rem',
+      'base': '1rem',
+      '0.5xl': '1.125rem',
+      'xl': '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '2rem',
+      '4xl': '2.5rem',
+    },
+  },
   presets: [
     presetUno(),
     presetAttributify(),
@@ -16,7 +35,10 @@ export default defineConfig({
       warn: true,
     }),
     presetWebFonts({
-      fonts: {},
+      fonts: {
+        montserrat: 'Montserrat:400,500,700',
+        nunito: 'Nunito:700',
+      },
     }),
   ],
 })

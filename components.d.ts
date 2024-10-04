@@ -11,6 +11,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     TheAbout: typeof import('./src/components/TheAbout.vue')['default']
     TheAdvantages: typeof import('./src/components/TheAdvantages.vue')['default']
+    TheButton: typeof import('./src/components/TheButton.vue')['default']
     TheCatalog: typeof import('./src/components/TheCatalog.vue')['default']
     TheCounter: typeof import('./src/components/TheCounter.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
@@ -18,5 +19,6 @@ declare module 'vue' {
     TheHero: typeof import('./src/components/TheHero.vue')['default']
     TheInput: typeof import('./src/components/TheInput.vue')['default']
     TheKTA: typeof import('./src/components/TheKTA.vue')['default']
+    TheLogo: typeof import('./src/components/TheLogo.vue')['default']
   }
 }

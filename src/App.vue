@@ -1,6 +1,6 @@
 <template>
   <main
-    font-sans
+    font="montserrat"
   >
     <TheHeader />
     <RouterView />
