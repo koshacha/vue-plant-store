@@ -8,14 +8,15 @@ import heroImage from '~/assets/hero-bg.png'
       <div relative class="h-dvh lg:grid lg:grid-cols-2" gap="5">
         <div>
           <img :src="heroImage" alt="hero image" m="l-auto" class="inset-0 w-full object-cover h-dvh max-md:absolute">
+          <div m="l-auto" class="absolute inset-0 bg-white/60 lg:hidden" />
         </div>
-        <div class="w-full max-lg:absolute max-lg:bottom-0" flex="~ col">
+        <div class="w-full max-lg:absolute max-lg:bottom-0 max-lg:top-0" flex="~ col">
           <div grid items-center flex="1" text-balance>
-            <div class="max-w-2xl max-md:px-2.5">
-              <h1 font="max-md:bold" text="3xl md:5xl primary bold" m="b-3 md:b-6">
+            <div class="xl:max-w-2xl max-md:px-2.5">
+              <h1 font="max-md:bold" text="3xl md:5xl primary bold max-lg:center" m="b-4 md:b-6">
                 Kembang Flower Mantap
               </h1>
-              <p text="md:0.5xl">
+              <p text="md:0.5xl max-lg:center">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
               </p>
             </div>
