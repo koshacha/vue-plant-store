@@ -11,14 +11,14 @@ import about2 from '~/assets/about-2.png'
           <h2 text="4xl balance" m="b-4" font="700">
             Buy more plants, it helps you to be relaxed
           </h2>
-          <p text-base>
+          <p font-base text-base>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida gravida aliquam. Pellentesque et lobortis nisl. Sed et mauris justo. Nulla eu enim non mauris maximus dignissim. Maecenas vitae eros sapien. Quisque pellentesque tempus dignissim.
           </p>
         </div>
         <div row-span-2>
           <img :src="about2" alt="">
         </div>
-        <div>
+        <div place-content-end>
           <img :src="about1" alt="">
         </div>
       </div>

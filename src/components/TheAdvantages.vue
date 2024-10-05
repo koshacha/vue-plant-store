@@ -8,25 +8,25 @@ const items: {
     {
       title:
         'Fast Delivery',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, sit.',
+      text: 'We offer convenient delivery options to ensure your order arrives promptly, no matter your location.',
       icon: 'i-carbon:delivery',
     },
     {
       title:
         'Great Customer Service',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, sit.',
+      text: 'Our customer support team is always ready to assist you with any questions or issues you may have.',
       icon: 'i-carbon:headset',
     },
     {
       title:
         'Original Plants',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, sit.',
+      text: 'All our plants are grown with love and care, ensuring they are healthy and beautiful, allowing you to enjoy their beauty for years to come.',
       icon: 'i-carbon:tree',
     },
     {
       title:
         'Affordable Price',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, sit.',
+      text: 'We offer high-quality products at affordable prices, so everyone can enjoy our products.',
       icon: 'i-carbon:pricing-consumption',
     },
   ]

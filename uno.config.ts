@@ -10,6 +10,7 @@ export default defineConfig({
   shortcuts: {
     'container': 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8',
     'container/small': 'max-w-6xl mx-auto px-4 sm:px-6 lg:px-8',
+    'container/big': 'max-w-8xl mx-auto px-4 sm:px-6 lg:px-8',
   },
   theme: {
     colors: {
@@ -20,6 +21,7 @@ export default defineConfig({
       'sm': ['0.625rem', '1rem'],
       'sm0.5': ['0.875rem', '1.5rem'],
       'base': ['1rem', '1.75rem'],
+      'md': ['1rem', '1.75rem'],
       '0.5xl': ['1.125rem', '2rem'],
       'xl': ['1.25rem'],
       '2xl': '1.5rem',
