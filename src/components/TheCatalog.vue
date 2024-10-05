@@ -59,7 +59,7 @@ const items: Product[] = [
           </select>
         </div>
       </div>
-      <div grid="~ cols-5" gap="5">
+      <div grid="~ cols-2 sm:cols-3 lg:cols-5" gap="5">
         <div v-for="item in items" :key="item.id" class="group">
           <div overflow-hidden m="b-4">
             <img :src="item.image" alt="" aspect-ratio-1 w-full transition transform="origin-top group-hover:scale-120">

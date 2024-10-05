@@ -8,8 +8,8 @@ import TheMailingForm from './TheMailingForm.vue'
 
 <template>
   <footer text="#333333" font="work" p="t-15 b-17" border="t primary/10">
-    <div class="container/small" flex="~ row" justify="between">
-      <div class="max-w-1/5">
+    <div class="container/small" flex="~ col md:row" justify="between">
+      <div class="lg:max-w-1/5">
         <div font="nunito bold" text="primary xl" m="b-6" uppercase>
           Plants
         </div>
@@ -22,9 +22,9 @@ import TheMailingForm from './TheMailingForm.vue'
           Suite 932 9538 Reynolds Expressway, Pollichchester, OH 98889-3830
         </p>
       </div>
-      <TheFooterMenu title="Company" :items="[{ title: 'About', href: '/about' }, { title: 'Blog', href: '/blog' }, { title: 'Careers', href: '/careers' }]" />
-      <TheFooterMenu title="Help" :items="[{ title: 'FAQ', href: '/faq' }, { title: 'Shipping', href: '/shipping' }, { title: 'Returns', href: '/returns' }]" />
-      <TheMailingForm />
+      <TheFooterMenu class="max-lg:hidden" title="Company" :items="[{ title: 'About', href: '/about' }, { title: 'Blog', href: '/blog' }, { title: 'Careers', href: '/careers' }]" />
+      <TheFooterMenu class="max-lg:hidden" title="Help" :items="[{ title: 'FAQ', href: '/faq' }, { title: 'Shipping', href: '/shipping' }, { title: 'Returns', href: '/returns' }]" />
+      <TheMailingForm class="max-md:hidden" />
     </div>
   </footer>
 </template>

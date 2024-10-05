@@ -35,7 +35,7 @@ const items: {
 <template>
   <section m="b-20">
     <div container>
-      <div grid="~ cols-4" gap="8">
+      <div grid="~ cols-1 sm:cols-2 xl:cols-4" gap="8">
         <div v-for="(item, i) in items" :key="i" border="~ #E0E0E0" p="x-4 y-5">
           <div flex="~ row" items="center" m="b-4">
             <div size-12 :class="item.icon" color="primary" m="r-4" />

@@ -8,15 +8,15 @@ import { computed } from 'vue'
 const { y } = useScroll(window)
 
 const styles = computed(() => {
-  return y.value > 20 ? 'bg-white pt-5 pb-5 shadow-xl fixed' : 'bg-transparent'
+  return y.value > 20 ? 'bg-white md:pt-5 md:pb-5 shadow-xl fixed' : 'bg-transparent'
 })
 </script>
 
 <template>
   <header
-    class="header"
+    class="max-md:fixed max-md:bg-white"
     :class="styles"
-    p="y-2 t-10"
+    p="y-2 md:t-10"
 
     absolute top-0 z-1 w-full transition
   >
