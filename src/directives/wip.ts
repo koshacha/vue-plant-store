@@ -8,7 +8,7 @@ const vWip: Directive = {
       const { notyf } = useNotyf()
 
       notyf.dismissAll()
-      notyf.error('Work in Progress')
+      notyf.error('Disabled in the Demo')
 
       return false
     })
