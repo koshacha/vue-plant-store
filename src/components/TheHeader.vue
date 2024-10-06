@@ -14,9 +14,8 @@ const styles = computed(() => {
 
 <template>
   <header
-    class="max-md:fixed max-md:bg-white"
+    class="py-2 max-md:fixed max-md:bg-white md:pt-10"
     :class="styles"
-    p="y-2 md:t-10"
 
     absolute top-0 z-1 w-full transition
   >
@@ -43,10 +42,12 @@ const styles = computed(() => {
         </button>
       </div>
       <div class="max-md:hidden">
-        <TheButton  v-wip theme="transparent">
+        <TheButton v-wip theme="transparent">
           Sign Up
         </TheButton>
-        <TheButton  v-wip>Sign In</TheButton>
+        <TheButton v-wip>
+          Sign In
+        </TheButton>
       </div>
     </div>
   </header>
