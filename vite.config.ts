@@ -9,7 +9,7 @@ import VueMacros from 'unplugin-vue-macros/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
+import { imagetools } from 'vite-imagetools'
 
 export default defineConfig({
   resolve: {
@@ -31,10 +31,13 @@ export default defineConfig({
       },
     }),
 
-    ViteImageOptimizer({
-      png: { quality: 80 },
-      jpeg: { quality: 75 },
-      jpg: { quality: 75 },
+    imagetools({
+      defaultDirectives: () => {
+        return new URLSearchParams({
+          format: 'webp',
+          quality: '80',
+        })
+      },
     }),
 
     // https://github.com/posva/unplugin-vue-router

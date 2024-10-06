@@ -14,6 +14,9 @@ importers:
       notyf:
         specifier: ^3.10.0
         version: 3.10.0
+      vite-imagetools:
+        specifier: ^7.0.4
+        version: 7.0.4(rollup@4.21.2)
       vue:
         specifier: ^3.5.3
         version: 3.5.3(typescript@5.5.4)
@@ -93,9 +96,6 @@ importers:
       vite:
         specifier: ^5.4.3
         version: 5.4.3(@types/node@22.5.4)
-      vite-plugin-image-optimizer:
-        specifier: ^1.1.8
-        version: 1.1.8(vite@5.4.3(@types/node@22.5.4))
       vitest:
         specifier: ^2.0.5
         version: 2.0.5(@types/node@22.5.4)(jsdom@25.0.0)
@@ -1266,10 +1266,6 @@ packages:
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
 
-  ansi-colors@4.1.3:
-    resolution: {integrity: sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==}
-    engines: {node: '>=6'}
-
   ansi-escapes@7.0.0:
     resolution: {integrity: sha512-GdYO7a61mR0fOlAsvC9/rIHf7L96sBc6dEWzeOu+KAea5bZyQRPIpojrVoI4AXGJS/ycu/fBTdLrUkA4ODrvjw==}
     engines: {node: '>=18'}
@@ -2045,6 +2041,10 @@ packages:
   ignore@5.3.1:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
     engines: {node: '>= 4'}
+
+  imagetools-core@7.0.1:
+    resolution: {integrity: sha512-XDUx3Ac1VrZ4XF5eAJNYdHbFXRPNyebHFrwJsZ4WHb7X2MitOVW23cFphSDByT3MH5rdWdxKr4edSW2agChvDg==}
+    engines: {node: '>=18.0.0'}
 
   import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -3134,16 +3134,14 @@ packages:
     resolution: {integrity: sha512-OljLrQ9SQdOUqTaQxqL5dEfZWrXExyyWsozYlAWFawPVNuD83igl7uJD2RTkNMbniIYgt8l81eCJGIdQF7avLQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
+  vite-imagetools@7.0.4:
+    resolution: {integrity: sha512-C9C7b2p/8/TCN2g26tE9haoer2i8K4x0v2RXUiHsIjiz221vQuKItCQ+VyiVCsUMPXfJC/tlZsmCZVBz5jh7uA==}
+    engines: {node: '>=18.0.0'}
+
   vite-node@2.0.5:
     resolution: {integrity: sha512-LdsW4pxj0Ot69FAoXZ1yTnA9bjGohr2yNBU7QKRxpz8ITSkhuDl6h3zS/tvgz4qrNjeRnvrWeXQ8ZF7Um4W00Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
-
-  vite-plugin-image-optimizer@1.1.8:
-    resolution: {integrity: sha512-40bYRDHQLUOrIwJIJQqyKJHrfgVshqzDLtMy8SEgf+fB7PnppslSTTkY7PJFrBGqgbCdOdN9KkqsvccXmnEa5Q==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      vite: '>=3'
 
   vite@5.4.3:
     resolution: {integrity: sha512-IH+nl64eq9lJjFqU+/yrRnrHPVTlgy42/+IzbOdaFDVlyLgI/wDlf+FCobXLX1cT0X5+7LMyH1mIy2xJdLfo8Q==}
@@ -4768,8 +4766,6 @@ snapshots:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
 
-  ansi-colors@4.1.3: {}
-
   ansi-escapes@7.0.0:
     dependencies:
       environment: 1.1.0
@@ -5610,6 +5606,8 @@ snapshots:
       safer-buffer: 2.1.2
 
   ignore@5.3.1: {}
+
+  imagetools-core@7.0.1: {}
 
   import-fresh@3.3.0:
     dependencies:
@@ -6809,6 +6807,14 @@ snapshots:
 
   validate-npm-package-name@5.0.1: {}
 
+  vite-imagetools@7.0.4(rollup@4.21.2):
+    dependencies:
+      '@rollup/pluginutils': 5.1.0(rollup@4.21.2)
+      imagetools-core: 7.0.1
+      sharp: 0.33.5
+    transitivePeerDependencies:
+      - rollup
+
   vite-node@2.0.5(@types/node@22.5.4):
     dependencies:
       cac: 6.7.14
@@ -6826,12 +6832,6 @@ snapshots:
       - sugarss
       - supports-color
       - terser
-
-  vite-plugin-image-optimizer@1.1.8(vite@5.4.3(@types/node@22.5.4)):
-    dependencies:
-      ansi-colors: 4.1.3
-      pathe: 1.1.2
-      vite: 5.4.3(@types/node@22.5.4)
 
   vite@5.4.3(@types/node@22.5.4):
     dependencies:

@@ -15,6 +15,7 @@
   "dependencies": {
     "@vueuse/core": "^11.0.3",
     "notyf": "^3.10.0",
+    "vite-imagetools": "^7.0.4",
     "vue": "^3.5.3",
     "vue-router": "^4.4.3"
   },
@@ -43,7 +44,6 @@
     "unplugin-vue-macros": "^2.11.8",
     "unplugin-vue-router": "^0.10.7",
     "vite": "^5.4.3",
-    "vite-plugin-image-optimizer": "^1.1.8",
     "vitest": "^2.0.5",
     "vue-tsc": "^2.1.6"
   },
