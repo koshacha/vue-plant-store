@@ -104,10 +104,10 @@ const products = computed<Product[]>(() => {
       <div grid="~ cols-2 sm:cols-3 lg:cols-5" gap="5">
         <div v-for="item in products" :key="item.id" :class="[{ grayscale: item.out_of_stock }, { group: !item.out_of_stock }]">
           <div relative overflow-hidden m="b-4">
-            <RouterLink v-if="!item.out_of_stock" :to="`catalog/${item.id}`" absolute inset-0 z-1 />
+            <RouterLink v-if="!item.out_of_stock" v-wip :to="`catalog/${item.id}`" absolute inset-0 z-1 />
             <img :src="item.image" alt="" aspect-ratio-1 w-full transition ease-in-out transform="origin-top group-hover:scale-110">
           </div>
-          <RouterLink :to="`catalog/${item.id}`" block text-center text-balance m="b-2">
+          <RouterLink v-wip :to="`catalog/${item.id}`" block text-center text-balance m="b-2">
             {{ item.name }}
           </RouterLink>
           <div text="center" font="600">

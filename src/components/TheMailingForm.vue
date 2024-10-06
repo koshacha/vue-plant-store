@@ -11,7 +11,7 @@ const email = ref('')
     </h5>
     <form>
       <TheInput v-model="email" type="email" name="email" placeholder="john@mail.com" />
-      <TheButton type="submit">
+      <TheButton v-wip type="submit">
         Submit
       </TheButton>
     </form>

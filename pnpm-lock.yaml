@@ -11,6 +11,9 @@ importers:
       '@vueuse/core':
         specifier: ^11.0.3
         version: 11.0.3(vue@3.5.3(typescript@5.5.4))
+      notyf:
+        specifier: ^3.10.0
+        version: 3.10.0
       vue:
         specifier: ^3.5.3
         version: 3.5.3(typescript@5.5.4)
@@ -872,8 +875,8 @@ packages:
   '@vitest/eslint-plugin@1.1.0':
     resolution: {integrity: sha512-Ur80Y27Wbw8gFHJ3cv6vypcjXmrx6QHfw+q435h6Q2L+tf+h4Xf5pJTCL4YU/Jps9EVeggQxS85OcUZU7sdXRw==}
     peerDependencies:
-      '@typescript-eslint/utils': ^8.3.0
-      eslint: ^9.9.1
+      '@typescript-eslint/utils': '>= 8.0'
+      eslint: '>= 8.57.0'
       typescript: '>= 5.0.0'
       vitest: '*'
     peerDependenciesMeta:
@@ -1515,7 +1518,7 @@ packages:
   eslint-config-flat-gitignore@0.3.0:
     resolution: {integrity: sha512-0Ndxo4qGhcewjTzw52TK06Mc00aDtHNTdeeW2JfONgDcLkRO/n/BteMRzNVpLQYxdCC/dFEilfM9fjjpGIJ9Og==}
     peerDependencies:
-      eslint: ^9.9.1
+      eslint: ^9.5.0
 
   eslint-flat-config-utils@0.3.1:
     resolution: {integrity: sha512-eFT3EaoJN1hlN97xw4FIEX//h0TiFUobgl2l5uLkIwhVN9ahGq95Pbs+i1/B5UACA78LO3rco3JzuvxLdTUOPA==}
@@ -1596,7 +1599,7 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       astro-eslint-parser: ^1.0.2
-      eslint: ^9.9.1
+      eslint: '>=8.0.0'
       svelte: '>=3.0.0'
       svelte-eslint-parser: ^0.41.0
       vue-eslint-parser: '>=9.0.0'
@@ -2314,6 +2317,9 @@ packages:
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
+
+  notyf@3.10.0:
+    resolution: {integrity: sha512-Mtnp+0qiZxgrH+TzVlzhWyZceHdAZ/UWK0/ju9U0HQeDpap1mZ8cC7H5wSI5mwgni6yeAjaxsTw0sbMK+aSuHw==}
 
   npm-package-arg@11.0.3:
     resolution: {integrity: sha512-sHGJy8sOC1YraBywpzQlIKBE4pBbGbiF95U6Auspzyem956E0+FtDtsx1ZxlOJkQCZ1AFXAY/yuvtFYrOxF+Bw==}
@@ -5774,6 +5780,8 @@ snapshots:
       validate-npm-package-license: 3.0.4
 
   normalize-path@3.0.0: {}
+
+  notyf@3.10.0: {}
 
   npm-package-arg@11.0.3:
     dependencies:

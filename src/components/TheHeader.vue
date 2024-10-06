@@ -29,13 +29,13 @@ const styles = computed(() => {
       <TheLogo />
 
       <div m="l-auto" flex="~ row" items="center" space-x-10>
-        <button>
+        <button v-wip>
           <div
 
             i-carbon:search size-5
           />
         </button>
-        <button>
+        <button v-wip>
           <div
 
             i-carbon:shopping-cart size-5
@@ -43,10 +43,10 @@ const styles = computed(() => {
         </button>
       </div>
       <div class="max-md:hidden">
-        <TheButton theme="transparent">
+        <TheButton  v-wip theme="transparent">
           Sign Up
         </TheButton>
-        <TheButton>Sign In</TheButton>
+        <TheButton  v-wip>Sign In</TheButton>
       </div>
     </div>
   </header>
