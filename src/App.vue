@@ -4,15 +4,8 @@
   >
     <TheHeader />
     <RouterView v-slot="{ Component }">
-      <Suspense>
-        <component :is="Component" />
-        <template #fallback>
-          <div h-dhv grid place-content-center bg-white>
-            Loading...
-          </div>
-        </template>
-      </Suspense>
-      <TheFooter />
-    </routerview>
+      <component :is="Component" />
+    </RouterView>
+    <TheFooter />
   </main>
 </template>

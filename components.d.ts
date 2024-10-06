@@ -14,6 +14,7 @@ declare module 'vue' {
     TheButton: typeof import('./src/components/TheButton.vue')['default']
     TheCatalog: typeof import('./src/components/TheCatalog.vue')['default']
     TheCounter: typeof import('./src/components/TheCounter.vue')['default']
+    TheCrossfadeImage: typeof import('./src/components/TheCrossfadeImage.vue')['default']
     TheCTA: typeof import('./src/components/TheCTA.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
     TheFooterMenu: typeof import('./src/components/TheFooterMenu.vue')['default']
