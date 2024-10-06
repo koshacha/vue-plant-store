@@ -17,7 +17,7 @@ defineProps<{
     </h5>
     <ul>
       <li v-for="item in items" :key="item.href" m="b-3.5">
-        <RouterLink to="item.href">
+        <RouterLink v-wip :to="item.href">
           {{ item.title }}
         </RouterLink>
       </li>
