@@ -10,7 +10,7 @@ export default defineConfig({
   shortcuts: {
     'container': 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8',
     'container/small': 'max-w-6xl mx-auto px-4 sm:px-6 lg:px-8',
-    'container/big': 'max-w-8xl mx-auto px-4 sm:px-6 lg:px-8',
+    'container/big': 'max-w-[1908px] mx-auto px-4 sm:px-6 lg:px-8',
   },
   theme: {
     colors: {

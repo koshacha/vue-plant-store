@@ -24,5 +24,6 @@ declare module 'vue' {
     TheKTA: typeof import('./src/components/TheKTA.vue')['default']
     TheLogo: typeof import('./src/components/TheLogo.vue')['default']
     TheMailingForm: typeof import('./src/components/TheMailingForm.vue')['default']
+    TheSelect: typeof import('./src/components/TheSelect.vue')['default']
   }
 }

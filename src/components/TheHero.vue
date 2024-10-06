@@ -43,9 +43,9 @@ const neighbors = computed(() => {
 <template>
   <section m="b-10 md:b-35">
     <div class="container/big px-0">
-      <div relative class="h-dvh lg:grid lg:grid-cols-2" gap="5">
-        <div relative overflow-hidden>
-          <TheCrossfadeImage :src="data.image" :alt="data.title" class="inset-0 ml-auto w-full object-cover h-dvh max-md:absolute" />
+      <div relative class="max-h-[1080px] h-dvh lg:grid lg:grid-cols-2" gap="5">
+        <div relative h-full overflow-hidden>
+          <TheCrossfadeImage :src="data.image" :alt="data.title" class="inset-0 ml-auto h-full w-full object-cover max-md:absolute" />
           <div m="l-auto" class="absolute inset-0 bg-white/60 lg:hidden" />
         </div>
         <div class="w-full max-lg:absolute max-lg:bottom-0 max-lg:top-0" flex="~ col">
