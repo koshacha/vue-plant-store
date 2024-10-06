@@ -38,6 +38,17 @@ const neighbors = computed(() => {
   const prev = (current.value - 1 + items.length) % items.length
   return { next: items[next], prev: items[prev] }
 })
+
+watch(current, () => {
+  [neighbors.value.prev, neighbors.value.next].map(({ image }) => {
+    return new Promise((resolve, reject) => {
+      const img = new Image()
+      img.src = image
+      img.onload = resolve
+      img.onerror = reject
+    })
+  })
+}, { immediate: true })
 </script>
 
 <template>
