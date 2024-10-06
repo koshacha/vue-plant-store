@@ -28,7 +28,7 @@ const styles = computed(() => {
     >
       <TheLogo />
 
-      <div m="l-auto" space-x-10>
+      <div m="l-auto" flex="~ row" items="center" space-x-10>
         <button>
           <div
 
@@ -42,7 +42,7 @@ const styles = computed(() => {
           />
         </button>
       </div>
-      <div>
+      <div class="max-md:hidden">
         <TheButton theme="transparent">
           Sign Up
         </TheButton>
