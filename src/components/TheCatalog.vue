@@ -61,12 +61,13 @@ const items: Product[] = [
       </div>
       <div grid="~ cols-2 sm:cols-3 lg:cols-5" gap="5">
         <div v-for="item in items" :key="item.id" class="group">
-          <div overflow-hidden m="b-4">
+          <div relative overflow-hidden m="b-4">
+            <RouterLink :to="`catalog/${item.id}`" absolute inset-0 z-1 />
             <img :src="item.image" alt="" aspect-ratio-1 w-full transition transform="origin-top group-hover:scale-120">
           </div>
-          <div text="center balance" m="b-2">
+          <RouterLink :to="`catalog/${item.id}`" block text-center text-balance m="b-2">
             {{ item.name }}
-          </div>
+          </RouterLink>
           <div text="center" font="600">
             IDR {{ item.price }}
           </div>
